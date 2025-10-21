@@ -13,7 +13,7 @@ Generate the outoput using more than one AI tool and based on the code generatio
 
 SAMPLE PYTHON CODE:
 
-[Untitled.txt](https://github.com/user-attachments/files/23017624/Untitled.txt)
+![WhatsApp Image 2025-10-21 at 14 55 45_08082aa3](https://github.com/user-attachments/assets/8e133f22-a473-4a13-8508-8a29a06fd75a)
 
 Generated Output (Example):
 
