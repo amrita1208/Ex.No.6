@@ -13,40 +13,7 @@ Generate the outoput using more than one AI tool and based on the code generatio
 
 SAMPLE PYTHON CODE:
 
-import openai
-from transformers import pipeline
-
-# Initialize APIs
-openai.api_key = "YOUR_OPENAI_API_KEY"
-summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
-
-# Input text
-text = """Artificial Intelligence (AI) is transforming industries through automation,
-predictive analytics, and intelligent systems. It enhances productivity and enables
-data-driven decision-making in healthcare, education, and finance."""
-
-# ChatGPT summarization (OpenAI API)
-response_chatgpt = openai.ChatCompletion.create(
-    model="gpt-3.5-turbo",
-    messages=[{"role": "user", "content": f"Summarize this text: {text}"}]
-)
-summary_chatgpt = response_chatgpt['choices'][0]['message']['content']
-
-# Hugging Face summarization
-summary_hf = summarizer(text, max_length=50, min_length=25, do_sample=False)[0]['summary_text']
-
-# Display comparison
-print("=== ChatGPT Summary ===")
-print(summary_chatgpt)
-print("\n=== Hugging Face Summary ===")
-print(summary_hf)
-
-# Simple analysis
-print("\nComparison Analysis:")
-if len(summary_chatgpt) > len(summary_hf):
-    print("ChatGPT produced a more detailed summary.")
-else:
-    print("Hugging Face summary is more concise.")
+[Untitled.txt](https://github.com/user-attachments/files/23017624/Untitled.txt)
 
 Generated Output (Example):
 
